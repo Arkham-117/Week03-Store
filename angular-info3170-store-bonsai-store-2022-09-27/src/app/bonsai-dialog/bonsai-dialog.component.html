@@ -19,6 +19,13 @@
       matInput 
       [(ngModel)]="data.bonsai.description"></textarea>
   </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Picture URL</mat-label>
+    <input matInput [(ngModel)]="data.bonsai.pictureLink"/>
+  </mat-form-field>
+
+ 
   
   <div mat-dialog-actions>
     <button mat-button [mat-dialog-close]="{bonsai: data.bonsai}">OK</button>
